@@ -16,19 +16,20 @@ pthread_cond_t cond;//条件变量
 
 //打印偶数
 void *printEvenNumber(void *arg) {
-    char *producer = (char *) arg;
+    char *printEvenNumber = (char *) arg;
     while (i < LOOP) {
         pthread_mutex_lock(&mutex);
         while (i & 1) {//奇数就等待
             //先解除之前的pthread_mutex_lock锁定的mtx
-            //然后阻塞在等待对列里休眠,直到再次被唤醒（大多数情况下是等待的条件成立而被唤醒或被惊群效应唤醒,唤醒后,该进程会先锁定pthread_mutex_lock(&mtx);，
+            //然后阻塞在等待队列里休眠,
+            //直到再次被唤醒(大多数情况下是等待的条件成立而被唤醒或被惊群效应唤醒,唤醒后,该进程会先锁定pthread_mutex_lock(&mtx) )
             //再读取资源
             pthread_cond_wait(&cond, &mutex);//线程阻塞在这儿,不能继续运行了,下次从这里恢复继续执行
         }
         if (i < LOOP) {
-            printf("%s:%d\n", producer, i);
+            printf("%s: %d\n", printEvenNumber, i);
             fflush(NULL);//刷新缓冲区，显示打印结果
-            sleep(1);
+            usleep(1000*300);//微秒
         }
         ++i;
         pthread_cond_signal(&cond);
@@ -39,7 +40,7 @@ void *printEvenNumber(void *arg) {
 
 //打印奇数
 void *printOddNumber(void *arg) {
-    char *consumer = (char *) arg;
+    char *printOddNumber = (char *) arg;
     while (i < LOOP) {
         pthread_mutex_lock(&mutex);
         while (!(i & 1)) {//偶数就等待
@@ -47,9 +48,9 @@ void *printOddNumber(void *arg) {
         }
         //是奇数就打印
         if (i < LOOP) {
-            printf("%s:%d\n", consumer, i);
+            printf("%s: %d\n", printOddNumber, i);
             fflush(NULL);
-            sleep(1);
+            usleep(1000*300);
         }
         ++i;
         pthread_cond_signal(&cond);
@@ -67,7 +68,7 @@ int main(int argc, const char **argv) {
     pthread_create(&tid_odd_number, NULL, printOddNumber, "printOddNumber");//打印奇数
     pthread_create(&tid_even_number, NULL, printEvenNumber, "printEvenNumber");//打印偶数
 
-    pthread_join(tid_odd_number, NULL);
+    pthread_join(tid_odd_number, NULL);//第二个值是出参，接收 printOddNumber 函数的返回值
     pthread_join(tid_even_number, NULL);
 
     pthread_mutex_destroy(&mutex);

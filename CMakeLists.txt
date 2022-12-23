@@ -13,4 +13,4 @@ set(CMAKE_CXX_STANDARD 17)
 #开启C++异常
 #set(CMAKE_CXX_FLAGS "-fexceptions")
 
-add_executable(testc_cpp   testc/testpthread/testpthreadcondition.c)
+add_executable(testc_cpp testc/testpthread/testpthreadcondition.c)
