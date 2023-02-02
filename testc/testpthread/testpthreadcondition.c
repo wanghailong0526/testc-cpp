@@ -59,8 +59,8 @@ void *printOddNumber(void *arg) {
     return NULL;
 }
 
-
 int main(int argc, const char **argv) {
+
     pthread_mutex_init(&mutex, NULL);
     pthread_cond_init(&cond, NULL);
 

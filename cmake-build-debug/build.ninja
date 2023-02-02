@@ -72,11 +72,11 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_testc_cpp: phony || CMakeFiles/testc_cpp.dir
 
-build CMakeFiles/testc_cpp.dir/testc/testpthread/testpthreadcondition.c.o: C_COMPILER__testc_cpp_Debug /Users/wanghailong/githubrep/clionprojects/testc_cpp/testc/testpthread/testpthreadcondition.c || cmake_object_order_depends_target_testc_cpp
-  DEP_FILE = CMakeFiles/testc_cpp.dir/testc/testpthread/testpthreadcondition.c.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+build CMakeFiles/testc_cpp.dir/testc++/algo/link/reOrderLink.cpp.o: CXX_COMPILER__testc_cpp_Debug /Users/wanghailong/githubrep/clionprojects/testc_cpp/testc++/algo/link/reOrderLink.cpp || cmake_object_order_depends_target_testc_cpp
+  DEP_FILE = CMakeFiles/testc_cpp.dir/testc++/algo/link/reOrderLink.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
   OBJECT_DIR = CMakeFiles/testc_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/testc_cpp.dir/testc/testpthread
+  OBJECT_FILE_DIR = CMakeFiles/testc_cpp.dir/testc++/algo/link
 
 
 # =============================================================================
@@ -86,7 +86,7 @@ build CMakeFiles/testc_cpp.dir/testc/testpthread/testpthreadcondition.c.o: C_COM
 #############################################
 # Link the executable testc_cpp
 
-build testc_cpp: C_EXECUTABLE_LINKER__testc_cpp_Debug CMakeFiles/testc_cpp.dir/testc/testpthread/testpthreadcondition.c.o
+build testc_cpp: CXX_EXECUTABLE_LINKER__testc_cpp_Debug CMakeFiles/testc_cpp.dir/testc++/algo/link/reOrderLink.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/testc_cpp.dir
   POST_BUILD = :
