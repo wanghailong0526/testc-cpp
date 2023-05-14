@@ -15,7 +15,20 @@ struct demo {
 //    int d;
 } a;
 
-void main() {
+struct S1 {
+    int i: 8;
+    char j: 4;
+    int a: 4;
+    double b;
+} s1;
+struct S2 {
+    int i: 8;
+    char j: 4;
+    double b;
+    int a: 4;
+} s2;
+
+int main() {
     int a = 1;//4字节
     short s = 2;//2字节
     long l = 3;//8字节
@@ -29,6 +42,10 @@ void main() {
     printf("double 类型占 %lu 个字节\n", sizeof(double));
     printf("char 类型占 %lu 个字节\n", sizeof(char));
     printf("位域 整体占 %lu 个字节\n", sizeof(struct demo));
+
+    //结构体
+    printf("s1 struct 类型占 %lu 个字节\n", sizeof(s1)); // 输出16
+    printf("s2 struct 类型占 %lu 个字节\n", sizeof(s2)); // 输出16
 
 
 }

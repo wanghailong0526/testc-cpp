@@ -1,10 +1,11 @@
 # ninja log v5
+0	62	1673861366424629894	CMakeFiles/testc_cpp.dir/testc++/algo/deleteKFromEnd.cpp.o	e5b7c0f11906e84a
+2	661	1662607321541020952	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/Man.cpp.o	d87f5442d539d5d5
+0	61	1674029511246683201	CMakeFiles/testc_cpp.dir/testc++/algo/link/reOrderLink.cpp.o	1b94ef171d1bcc6f
 1	72	1673957985281746829	CMakeFiles/testc_cpp.dir/testc++/algo/link/findKFromEnd.cpp.o	66d67e37d08bcf46
 0	66	1673958294992459703	CMakeFiles/testc_cpp.dir/testc++/algo/link/findFirstNodeCircle.cpp.o	fb32b0a4f7ed5ea5
-0	62	1673861366424629894	CMakeFiles/testc_cpp.dir/testc++/algo/deleteKFromEnd.cpp.o	e5b7c0f11906e84a
 0	66	1673953689967626577	CMakeFiles/testc_cpp.dir/testc++/algo/link/linkFindMidNode.cpp.o	93133e9a8ff3c2bc
 0	86	1673856564548979483	CMakeFiles/testc_cpp.dir/testc++/algo/findKFromEnd.cpp.o	b3eb74d9f5ddce88
-2	661	1662607321541020952	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/Man.cpp.o	d87f5442d539d5d5
 0	65	1671773266830424809	CMakeFiles/testc_cpp.dir/testc/testpthread/testpthreadmutex.c.o	1365735882168bfd
 2	632	1662630281395637485	CMakeFiles/testc_cpp.dir/testc++/dongnao/testtemplatefun/testtemplatefun.cpp.o	8bb87a8440feb6ed
 2	777	1662538623435031186	CMakeFiles/testc_cpp.dir/testc++/testclass/testclass.cpp.o	7d1c108b1b9a8fdc
@@ -18,9 +19,9 @@
 4	687	1662628684735638884	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/Circle.cpp.o	ffeaac9ddd838b1d
 0	107	1673181584662782116	CMakeFiles/testc_cpp.dir/MyAtoi.cpp.o	14f2f51200c67e7b
 0	7	0	clean	3c8e6cc385ee00ba
-0	72	1675360810864686054	build.ninja	f4fbeb2f32e6f871
+0	72	1684072391670438102	build.ninja	f4fbeb2f32e6f871
 1	68	1673960089672080140	CMakeFiles/testc_cpp.dir/testc++/algo/link/mergeTwoOrderLink.cpp.o	ca265d5faef17fce
-61	115	1674029511300911876	testc_cpp	c91c4c7f3aeaf7f3
+56	112	1683368953638673700	testc_cpp	33310aac5a76e82
 3	411	1669906979180671636	CMakeFiles/testc_cpp.dir/testc++/testtypenameandclass.cpp.o	128d5532a217b772
 3	56	1662628684112421724	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/Shape.cpp.o	8468cd3cc9e52027
 3	629	1662541710976711672	CMakeFiles/testc_cpp.dir/testc++/testoperator/Point.cpp.o	6a84a1375dac9feb
@@ -37,8 +38,10 @@
 0	65	1673958500649493623	CMakeFiles/testc_cpp.dir/testc++/algo/link/deleteKFromEnd.cpp.o	3443bc7807ae87ae
 2	637	1669908222155600916	CMakeFiles/testc_cpp.dir/testc++/testmove.cpp.o	fcb97a1528aaf594
 0	2201	1663044055636647328	CMakeFiles/testc_cpp.dir/testc++/dongnao/testtemplateclass/testtemplateclass.cpp.o	5399088af6bdbcba
+1	56	1683368953582979241	CMakeFiles/testc_cpp.dir/testc/baseType.c.o	deafd29d0ca39c50
 2	651	1662624517728859485	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/Plane.cpp.o	97c66168d213ab01
 2	486	1663161853506475553	CMakeFiles/testc_cpp.dir/testc++/dongnao/testtypecast/testtypecast.cpp.o	7362a4cb969b68f1
+1	84	1673798966636357265	CMakeFiles/testc_cpp.dir/testc++/algo/findFirstNodeCircle.cpp.o	860a6cef4f8d8f5a
 1	587	1668946315858915216	CMakeFiles/testc_cpp.dir/testc++/testrightvalue.cpp.o	7ceba2344aacfbbb
 1	794	1665219903646850647	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/testinherit.cpp.o	782553413bd995c9
 0	68	1673798760426911174	CMakeFiles/testc_cpp.dir/testc++/algo/linkCheckCircle.cpp.o	35fb555c033d5aec
@@ -46,6 +49,7 @@
 0	785	1665221706248196578	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/testvariant.cpp.o	1df5b3993ef2630
 2	58	1662609093598379615	CMakeFiles/testc_cpp.dir/testc++/dongnao/testinherit/Student.cpp.o	e70551fcacd1da4f
 1	67	1672834819784346688	CMakeFiles/testc_cpp.dir/testc/testpthread/testpthreadcondition.c.o	ff92c313ecb1a01d
-0	61	1674029511246683201	CMakeFiles/testc_cpp.dir/testc++/algo/link/reOrderLink.cpp.o	1b94ef171d1bcc6f
 0	1405	1672835189614302606	CMakeFiles/testc_cpp.dir/testc++/dongnao/testnamespace.cpp.o	9b266c4c17276202
-1	84	1673798966636357265	CMakeFiles/testc_cpp.dir/testc++/algo/findFirstNodeCircle.cpp.o	860a6cef4f8d8f5a
+0	848	1684072397568417341	CMakeFiles/testc_cpp.dir/testc++/string/testString.cpp.o	274feb0242f45599
+0	862	1684072397582008033	CMakeFiles/testc_cpp.dir/testc++/string/String.cpp.o	8d92b438a41af0de
+862	967	1684072397689964423	testc_cpp	6a0f8447a5a7cced

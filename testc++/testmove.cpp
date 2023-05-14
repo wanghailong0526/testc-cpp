@@ -40,7 +40,8 @@ public:
      */
     ~BigObj() {
         if (data_) {
-            delete[] data_;
+            delete data_;
+            data_ = nullptr;
         }
         length_ = 0;
         std::cout << "调用析构函数" << std::endl;
